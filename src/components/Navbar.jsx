@@ -6,7 +6,7 @@ const Navbar = ({ activePage, handleNavClick, isNavbarOpen, toggleNavbar }) => {
     <>
       <div
         className={`2xl:w-80 xl:w-52 w-44 h-full bg-[#f8f8f8] flex flex-col justify-between pt-8 pl-6 pb-14 md:pb-0 absolute md:relative z-10 transition-transform duration-400 ${
-          isNavbarOpen ? "translate-x-0" : "-translate-110 md:translate-x-0 "
+          isNavbarOpen ? "translate-x-0" : "-translate-x-120 md:translate-x-0 "
         }`}
       >
         <a

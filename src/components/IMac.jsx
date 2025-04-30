@@ -13,21 +13,21 @@ const IMac = () => {
         <img
           src={getCurrentModel().images.side}
           alt="IMac"
-          className="2xl:max-w-full xl:max-w-36 max-w-24"
+          className="2xl:max-w-44 xl:max-w-36 max-w-24"
         />
       </div>
       <div className="bg-gray-50 col-span-1 row-span-1 flex items-center justify-center p-4">
         <img
           src={getCurrentModel().images.front}
           alt="IMac"
-          className="2xl:max-w-full xl:max-w-52 max-w-48 "
+          className="2xl:max-w-72 xl:max-w-52 max-w-48 "
         />
       </div>
       <div className="bg-gray-50 col-span-1 row-span-1 flex items-center justify-center p-4">
         <img
           src={getCurrentModel().images.back}
           alt="IMac"
-          className="2xl:max-w-full xl:max-w-52 max-w-48 "
+          className="2xl:max-w-72 xl:max-w-52 max-w-48 "
         />
       </div>
       <div className="absolute md:top-1/2 top-3/4 md:left-4 left-12 transform -translate-y-1/2 flex flex-col lg:space-y-2 space-y-1 bg-gray-50 ">

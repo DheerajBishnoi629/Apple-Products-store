@@ -14,14 +14,14 @@ const MacBook = () => {
   };
   return (
     <div className="flex flex-col items-center justify-around bg-white p-8 h-full">
-      <h1 className="2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-gray-800 mb-8">
+      <h1 className="2xl:text-2xl xl:text-2xl md:text-xl font-semibold text-gray-800 mb-4">
         Choose your new MacBook Air
       </h1>
       <div className="flex">
         {macbookModels.map((mb, index) => (
           <button
             key={index}
-            className={`2xl:w-36 md:w-26 w-28 2xl:h-18 md:h-12 h-12 flex flex-col justify-evenly items-center border ${
+            className={`2xl:w-36 md:w-26 w-28 2xl:h-14 md:h-12 h-12 flex flex-col justify-evenly items-center border ${
               index === 0 ? "rounded-l-xl" : "rounded-r-xl"
             }
             ${
@@ -45,10 +45,10 @@ const MacBook = () => {
           <img
             src={currentColor.img}
             alt={`MacBook Air with ${currentMb.chip}`}
-            className="2xl:w-72 xl:w-52 w-48  2xl:mt-0 sm:mt-6 object-contain m-auto"
+            className="2xl:w-62 xl:w-52 w-48  2xl:-mt-3 sm:mt-6 object-contain m-auto"
           />
         </div>
-        <span className="2xl:text-lg xl:text-sm font-medium text-gray-800 mb-2 text-center md:text-left">
+        <span className="2xl:text-lg xl:text-sm font-medium text-gray-800 mb-2 2xl:-mt-16 text-center md:text-left">
           {currentColor.label}
         </span>
         <div className="flex space-x-2 mb-4 md:text-left justify-center md:justify-start">
@@ -68,13 +68,13 @@ const MacBook = () => {
         <img
           src={currentMb.icon}
           alt={currentMb.chip}
-          className="w-12 h-12 2xl:mb-4 xl:mb-2"
+          className="w-10 h-10 2xl:mb-4 xl:mb-2"
         />
         <div className="2xl:mb-4 xl:mb-2 text-center md:text-left ">
           {currentMb.specs.map((specs, index) => (
             <p
               key={index}
-              className="2xl:text-lg xl:text-base font-semibold text-gray-800 mb-0.5 "
+              className="2xl:text-base xl:text-base font-semibold text-gray-800 mb-0.5 "
             >
               {specs}
             </p>
@@ -82,7 +82,7 @@ const MacBook = () => {
         </div>
         <button
           type="button"
-          className="w-min text-sm py-1 px-3 bg-blue-400 rounded-full text-white mt-4 md:mt-0 "
+          className="w-min text-sm py-1 px-3 bg-blue-400 rounded-full text-white mt-4 md:-mt-2 "
         >
           Buy
         </button>
