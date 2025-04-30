@@ -1,4 +1,4 @@
-import { watchModels } from "../data";
+import { watchModels } from "../data/index";
 
 const Watch = () => {
   return (
@@ -10,7 +10,9 @@ const Watch = () => {
         {watchModels.map((watch, index) => (
           <div
             key={index}
-            className="w-60 h-[430px] flex flex-col justify-around group"
+            className={`w-60 h-[430px] flex flex-col justify-around group ${
+              index === 2 ? "hidden md:flex" : ""
+            }`}
           >
             <div className="w-full h-64 mb-4 overflow-hidden relative">
               <img
@@ -31,9 +33,9 @@ const Watch = () => {
               {watch.price}
             </a>
             <div className="md:text-sm text-xs text-gray-700 my-2">
-              {watch.desc.map((desc, index) => (
-                <span key={index} className="block">
-                  {desc}
+              {watch.desc.map((line, i) => (
+                <span key={i} className="block">
+                  {line}
                 </span>
               ))}
             </div>
